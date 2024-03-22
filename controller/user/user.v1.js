@@ -1,8 +1,9 @@
-const accountSid = "ACb33a80617cb7c5bcb576108bb06af160";
-const authToken = "480f95931e862f78fcba183b99c45beb";
+require('dotenv').config();
+const accountSid = `${process.env.accountSid}`;
+const authToken = `${process.env.authToken}`;
 const client = require("twilio")(accountSid, authToken);
 const User = require('../../models/user');
-
+console.log(accountSid, authToken,);
 
 const generateOTP = () => {
     const otpLength = 6;
