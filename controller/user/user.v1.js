@@ -3,7 +3,7 @@ const accountSid = `${process.env.accountSid}`;
 const authToken = `${process.env.authToken}`;
 const client = require("twilio")(accountSid, authToken);
 const User = require('../../models/user');
-console.log(accountSid, authToken,);
+
 
 const generateOTP = () => {
     const otpLength = 6;
