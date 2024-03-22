@@ -19,6 +19,7 @@
     "express-session": "^1.18.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.2",
+    "pm2": "^5.3.1",
     "twilio": "^5.0.1"
   }
 }
